@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caramel&family=Caveat:wght@700&family=Comfortaa:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <!-- preview-header -->
+    <div class="text-[14px] h-preview-height  px-[20px] -bg--bs-preview-header fixed top-[0] right-[0] left-[0] flex items-center justify-between  mb-[1px] z-[100]">
+        <div class="previewer-left">
+            <a href="#" class="inline-block bg-[url('../assets/images/logo.svg')] bg-[length:152px_18px] w-[152px] h-[18px] absolute top-[18px]"></a>
+        </div>
+        <div class="previewer-right">
+            <button class=" -text--bs-white px-[20px] py-[5px] -bg--bs-preview-btn rounded-[4px]">
+                <a class="previewer-buy-link text-white" href="#">Buy now</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- wrapper -->
+    <div class="mt-preview-height">
+
+        <!-- top-bar -->
+        <div class=" h-topbar-height -bg--bs-topbar -text--bs-white flex px-[78px] text-[13px] justify-between">
+            <div class="flex items-center">
+                <div class="mr-[25px]">
+                    <a href="#" class=" ">
+                        <i class="fa-solid fa-mobile-screen-button mr-[10px]"></i>
+                        0123 4567 890
+                    </a>
+                </div>
+                <div class="mr-[25px]">
+                    <a href="#" class=" ">
+                        <i class="fa-regular fa-envelope mr-[10px]"></i>
+                        demo@hasthemes.com
+                    </a>
+                </div>
+            </div>
+            <div class="">
+                <ul class="flex items-center h-full">
+                    <li class=" ml-[20px] cursor-pointer">
+                        <span>My Account</span>
+                        <i class="fa-solid fa-chevron-down ml-[3px]"></i>
+                    </li>
+                    <li class=" ml-[20px] cursor-pointer">
+                        <span>USD $</span>
+                        <i class="fa-solid fa-chevron-down ml-[3px]"></i>
+                    </li>
+                    <li class="flex items-center ml-[20px] cursor-pointer">
+                        <img  src="./assets/images/flag/america.jpg" alt="" class="mr-[5px]">
+                        <span>English</span>
+                        <i class="fa-solid fa-chevron-down ml-[3px]"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- header -->
+        <div class="header py-[25px] px-[90px] flex items-center">
+            <div class="header-item w-1/3 text-[14px]">
+                <div class="inline-block p-[10px] -text--color-opa border-dotted border-[#d9d9d9] border-[1px]">
+                    <i class="fas fa-truck w-[31px] h-[31px] -bg--bs-primary -text--bs-white rounded-[100%]  text-center leading-[31px] "></i>
+                    <span class="mx-[11px]">Free Shipping on Orders</span>
+                    <span class="-text--bs-primary">Over £100</span>
+                </div>
+            </div>
+            <div class="header-item w-1/3 flex">
+                <div class="header-img m-auto">
+                    <a href="#" class="header-img-link">
+                        <img  src="./assets/images/logo-header.png" alt="" class="max-w-full">
+                    </a>
+                </div>
+            </div>
+            <div class="header-item w-1/3 flex items-center text-right justify-end">
+                <button class="search-btn rounded-[100%] -bg--color-opa -text--bs-white w-[38px] h-[38px] leading-[38px] mr-[15px] text-center text-[18px]">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div class="shopping-wrapper flex items-center relative z-[10]">
+                    <div class="shopping-bag w-[50px] h-[54px] text-[30px] leading-[50px] -text--bs-primary border-dotted border-[1px] border-[#d9d9d9] text-center">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="cart-txt text-[16px] uppercase leading-[50px] -text--color-primary px-[12px] border-dotted border-[1px] border-[#d9d9d9]">Cart : $0.00</div>
+                    <div class="cart-bagde absolute top-[-15px] left-[38px] block w-[28px] h-[28px] leading-[28px] font-normal text-[16px] -text--color-primary bg-[#ededed] text-center rounded-full">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation -->
+        <div class="nav py-[10px] flex items-center">
+            <div class="max-w-[1320px] w-full px-[12px] m-auto">
+                <ul class="nav-list flex items-center text-[15px] leading-[30px] font-normal">
+                    <li class="mx-[2px] hover:-text--bs-primary "><a href="#" class=" px-[20px] py-[10px] block -text--bs-primary">Home</a></li>
+                    <li class="mx-[2px] hover:-text--bs-primary "><a href="./dist/shop.html" class=" px-[20px] py-[10px] block ">Shop</a></li>
+                    <li class="mx-[2px] hover:-text--bs-primary "><a href="#" class=" px-[20px] py-[10px] block ">Pages</a></li>
+                    <li class="mx-[2px] hover:-text--bs-primary "><a href="./dist/blog.html" class=" px-[20px] py-[10px] block ">Blog</a></li>
+                    <li class="mx-[2px] hover:-text--bs-primary "><a href="#" class=" px-[20px] py-[10px] block ">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- container-home-page -->
+            <div class="container-home-page ">
+                <!-- slider -->
+                <div class="relative w-full bg-[url('../assets/images/slide1.jpg')] bg-cover bg-no-repeat bg-center md:bg-top h-[668px] flex">
+                    <div class="slider-content max-w-[1320px] m-auto w-full">
+                        <div class="w-[40%]">
+                            <h4 class="text-[30px] -text--color-primary py-[7px] px-[18px] mb-[5px] -bg--bs-white inline-block">Clear &amp; Beautiful</h4>
+                        <h2 class="text-[30px] -text--bs-white uppercase px-[20px] py-[7px] mb-[30px] -bg--bs-primary inline-block"  >
+                            <span>Make your Lawn</span>
+                        </h2>
+                        <p class="text-[18px] leading-[25px] -text--bs-white mb-[30px] font-normal w-[526px] text-wrap">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                        </p>
+                        <button class="text-[13px] px-[30px] py-[10px] -text--bs-white -bg--bs-slider-btn uppercase font-bold hover:-bg--bs-primary hover:-text--color-primary">Shop now</button>
+                        </div>
+                    </div>
+                    <button class="absolute w-[45px] h-[45px] -text--bs-white -bg--bs-primary text-center leading-[45px] rounded-full left-[20px] top-[50%]  translate-y-[-50%] hover:-text--bs-primary hover:-bg--bs-white">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="absolute w-[45px] h-[45px] -text--bs-white -bg--bs-primary text-center leading-[45px] rounded-full right-[20px] top-[50%] translate-y-[-50%] hover:-text--bs-primary hover:-bg--bs-white">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+        
+                <!-- banner -->
+                <div class="banner flex -bg--bs-banner-item">
+                    <div class="max-w-[1320px] w-full px-[12px] m-auto flex py-[25px] ">
+                        <div class="w-1/3 relative px-[12px]">
+                            <div class="banner-img">
+                                <img src="./assets/images/banner1.png" alt="" class="w-full border-r border-r-[#dbe1d4]">
+                            </div>
+                            <div class="banner-info absolute top-[10%] w-[65%]">
+                                <span class="text-[14px] mb-[5px] -text--color-opa tracking-widest">Sale up to 30% off</span>
+                                <h3 class="text-[18px] -text--color-primary font-semibold leading-[1.2]">Garden Machine</h3>
+                                <p class="text-[14px] mt-[16px] -text--color-opa">
+                                    Proin vehicula velit blandit leo molestie pulvinar. Praesent sollicitudin libero ex.
+                                </p>
+                                <button href="#" class=" py-[6px] px-[15px] -bg--bs-white  mt-[20px] border-2 -border--bs-primary -text--bs-primary hover:-bg--bs-primary hover:-text--bs-white">Shop now!</button>
+                            </div>
+                        </div>
+                        <div class="w-1/3 relative px-[12px]">
+                            <div class="banner-img">
+                                <img src="./assets/images/banner2.png" alt="" class="w-full border-r border-r-[#dbe1d4]">
+                            </div>
+                            <div class="banner-info absolute top-[10%] w-[65%]">
+                                <span class="text-[14px] mb-[5px] -text--color-opa tracking-widest">Sale up to 20% off</span>
+                                <h3 class="text-[18px] -text--color-primary font-semibold leading-[1.2]">Garden Tools</h3>
+                                <p class="text-[14px] mt-[16px] -text--color-opa">
+                                    Proin vehicula velit blandit leo molestie pulvinar. Praesent sollicitudin libero ex.
+                                </p>
+                                <button href="#" class=" py-[6px] px-[15px] -bg--bs-white  mt-[20px] border-2 -border--bs-primary -text--bs-primary hover:-bg--bs-primary hover:-text--bs-white">Shop now!</button>
+                            </div>
+                        </div>
+                        <div class="w-1/3 relative px-[12px]">
+                            <div class="banner-img">
+                                <img src="./assets/images/banner3.png" alt="" class="w-full border-r border-r-[#dbe1d4]">
+                            </div>
+                            <div class="banner-info absolute top-[10%] w-[65%]">
+                                <span class="text-[14px] mb-[5px] -text--color-opa tracking-widest">Sale up to 15% off</span>
+                                <h3 class="text-[18px] -text--color-primary font-semibold leading-[1.2]">Garden Flowers</h3>
+                                <p class="text-[14px] mt-[16px] -text--color-opa">
+                                    Proin vehicula velit blandit leo molestie pulvinar. Praesent sollicitudin libero ex.
+                                </p>
+                                <button href="#" class=" py-[6px] px-[15px] -bg--bs-white  mt-[20px] border-2 -border--bs-primary -text--bs-primary hover:-bg--bs-primary hover:-text--bs-white">Shop now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- product-group -->
+                <div class="product-group py-[60px] flex">
+                    <div class="max-w-[1320px] px-[12px] m-auto w-full" >
+                        <div class="product-header">
+                            <ul class="relative text-[19px] mb-[30px] flex justify-center before:content-[''] before:w-full before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <li class="cursor-pointer px-[20px] z-10 -bg--bs-white -text--bs-primary ">New Arrival</li>
+                                <li class="cursor-pointer relative px-[20px] z-10 -bg--bs-white  before:content-[''] before:inline-block before:h-[5px] before:w-[5px] before:bg-[#343434] before:absolute before:left-[0]  before:top-[50%]">OnSale</li>
+                                <li class="cursor-pointer relative px-[20px] z-10 -bg--bs-white before:content-[''] before:inline-block before:h-[5px] before:w-[5px] before:bg-[#343434] before:absolute before:left-[-5px]  before:top-[50%]">Featured Products</li>
+                            </ul>
+                        </div>
+                        <div class="product-content relative w-full">
+                            <div class="product-list flex">
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-5%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product1.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product2.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >Silver - Recertified</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product3.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >MH05-Black</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product4.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >Strive Shoulder Pack</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] translate-y-[-50%] left-[-4px] hover:-bg--bs-primary">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] translate-y-[-50%] right-[-4px] hover:-bg--bs-primary">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- advertisement -->
+                <div class="advertisement flex ">
+                    <div class="max-w-[1360px] m-auto w-full pb-[24px]  flex">
+                        <div class="w-1/3 px-[12px] overflow-hidden"><a href="#" class=" hover:scale-[1.2]"><img class="w-full" src="./assets/images/asvertisement/1.jpg" alt=""></a></div>
+                        <div class="w-2/3">
+                            <div class="w-full px-[12px] pb-[12px]"><a href="#"><img class="w-full" src="./assets/images/asvertisement/2.jpg" alt=""></a></div>
+                            <div class="w-full flex py-[12px]">
+                                <div class="w-1/2 px-[12px]"><a href="#"><img class="w-full" src="./assets/images/asvertisement/3.jpg" alt=""></a></div>
+                                <div class="w-1/2 px-[12px]"><a href="#"><img class="w-full" src="./assets/images/asvertisement/4.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- product-best-sellers -->
+                <div class="product-group py-[60px] flex">
+                    <div class="max-w-[1320px] px-[12px] m-auto w-full" >
+                        <div class="product-header">
+                            <div class="relative text-[19px] mb-[30px] flex justify-center before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] -bg--bs-white">Best sellers</h4>
+                            </div>
+                        </div>
+                        <div class="product-content relative w-full">
+                            <div class="product-list flex">
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-5%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product1.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product2.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >Silver - Recertified</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product3.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >MH05-Black</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="w-1/4 px-[15px]">
+                                    <div class="product-imag relative">
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] left-[2px] -text--bs-white -bg--product-color">New</span>
+                                        <span class="text-[20px] w-[65px] h-[65px] rounded-full text-center leading-[65px] absolute top-[0] right-[2px] -text--bs-white -bg--bs-primary">-15%</span>
+                                        <a href="#">
+                                            <img src="./assets/images/product/product4.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                        <div class="product-btn absolute bottom-[0] left-[0] right-[0] h-[44px] bg-[#474747] flex">
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-heart"></i></span>
+                                            </button>
+                                            <button class="uppercase w-add-to-wishlist font-normal text-[10px] py-[12px] max-w-full text-center -text--bs-white inline-block border-x-[1px] border-[#6c6c6c] hover:-bg--bs-primary">
+                                                add to wishlist
+                                            </button>
+                                            <button class="w-[50px] py-[12px] text-center -text--bs-white inline-block hover:-bg--bs-primary">
+                                                <span class="block leading-[20px]"><i class="fa-regular fa-eye"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="text-center pt-[16px] mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[15px] -text--color-primary mb-[16px] text-center hover:-text--bs-primary">
+                                            <a href="#" >Strive Shoulder Pack</a>
+                                        </h5>
+                                        <h3 class="product-price text-center leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through"></span>
+                                            <span class="text-[18px] -text-[#000000]">$11.90</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] translate-y-[-50%] left-[-4px] hover:-bg--bs-primary">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] translate-y-[-50%] right-[-4px] hover:-bg--bs-primary">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- follow -->
+                <div class="follow py-[60px] -bg--bs-primary">
+                    <h3 class="-text--bs-white text-[24px] w-full text-center font-[300] leading-[28px]">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram mr-[15px]"></i>
+                            <span class="">follow @ instagram</span>
+                        </a>
+                    </h3>
+                </div>
+        
+                <!-- category -->
+                <div class="product-category flex bg-[#f1f1f1]">
+                    <div class="max-w-[1320px] w-full m-auto py-[60px]  flex">
+                        <div class="w-1/4   px-[12px]">
+                            <div class="relative text-[19px] mb-[24px] flex justify-start before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] bg-[#f1f1f1]">Garden Tools</h4>
+                            </div>
+                            <div class="category-list relative">
+                                <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] left-[-18px] translate-y-[-50%]">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </button>
+                                <button class="w-[38px] h-[38px] -text--bs-white rounded-full bg-[#343434] leading-[38px] text-[20px] absolute top-[50%] right-[-18px] translate-y-[-50%]">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/1.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/2.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/3.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/4   px-[12px]">
+                            <div class="relative text-[19px] mb-[24px] flex justify-start before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] bg-[#f1f1f1]">Garden Decor</h4>
+                            </div>
+                            <div class="category-list">
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/4.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/5.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/6.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/4   px-[12px]">
+                            <div class="relative text-[19px] mb-[24px] flex justify-start before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] bg-[#f1f1f1]">Outdoor Living</h4>
+                            </div>
+                            <div class="category-list">
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/4.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/7.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/9.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/4   px-[12px]">
+                            <div class="relative text-[19px] mb-[24px] flex justify-start before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] bg-[#f1f1f1]">Indoor Living</h4>
+                            </div>
+                            <div class="category-list">
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/9.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/3.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="flex mb-[24px]">
+                                    <div class="product-imag mr-[16px] w-[70px]">
+                                        <a href="#">
+                                            <img src="./assets/images/category/4.jpg" alt="" class="min-w-full block">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class=" mb-[16px] -text--product-color text-[14px]">
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                            <span class="star -text--star-hollow"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <h5 class="text-[13px] -text--color-primary mb-[8px] font-bold hover:-text--bs-primary">
+                                            <a href="#" >MH02-Gray</a>
+                                        </h5>
+                                        <h3 class=" leading-[28px]">
+                                            <span class="text-[14px] mr-[5px] -text--color-opa line-through">$23.90</span>
+                                            <span class="text-[18px] -text-[#000000]">$19.12</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Lastest Articals -->
+                <div class="articels py-[60px] flex">
+                    <div class="max-w-[1320px] px-[12px] m-auto w-full" >
+                        <div class="articels-header">
+                            <div class="relative text-[19px] mb-[30px] flex justify-center before:content-[''] before:w-h4 before:h-[1px] before:bg-[#e5e5e5] before:absolute before:left-[0] before:right-[0] before:top-[50%]">
+                                <h4 class="z-10 px-[25px] -bg--bs-white">Latest Articles</h4>
+                            </div>
+                        </div>
+                        <div class="articels-content flex">
+                            <div class="w-1/4 px-[12px] mb-[24px]">
+                                <div class=" mb-[24px]">
+                                    <a href="#">
+                                        <img src="./assets/images/articals/1.jpg" alt="" class="w-full">
+                                    </a>
+                                </div>
+                                <div class="articel-contain">
+                                    <h4 class="mb-[16px] text-[15px] font-bold -text--color-primary hover:-text--bs-primary">
+                                        <a href="#">This Is Secound Post For XipBlog</a>
+                                    </h4>
+                                    <div class="flex items-center justify-between text-[13px] -text--color-opa">
+                                        <span class="date">
+                                                <i class="far fa-calendar"></i>
+                                                7/25/2020
+                                        </span>
+                                        <span class="author">
+                                                <i class="far fa-user"></i>
+                                                Hastech
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/4 px-[12px] mb-[24px]">
+                                <div class=" mb-[24px]">
+                                    <a href="#">
+                                        <img src="./assets/images/articals/2.jpg" alt="" class="w-full">
+                                    </a>
+                                </div>
+                                <div class="articel-contain">
+                                    <h4 class="mb-[16px] text-[15px] font-bold -text--color-primary hover:-text--bs-primary">
+                                        <a href="#">This Is Third Post For XipBlog</a>
+                                    </h4>
+                                    <div class="flex items-center justify-between text-[13px] -text--color-opa">
+                                        <span class="date">
+                                                <i class="far fa-calendar"></i>
+                                                7/25/2020
+                                        </span>
+                                        <span class="author">
+                                                <i class="far fa-user"></i>
+                                                Hastech
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/4 px-[12px] mb-[24px]">
+                                <div class=" mb-[24px]">
+                                    <a href="#">
+                                        <img src="./assets/images/articals/3.jpg" alt="" class="w-full">
+                                    </a>
+                                </div>
+                                <div class="articel-contain">
+                                    <h4 class="mb-[16px] text-[15px] font-bold -text--color-primary hover:-text--bs-primary">
+                                        <a href="#">This Is Fourth Post For XipBlog</a>
+                                    </h4>
+                                    <div class="flex items-center justify-between text-[13px] -text--color-opa">
+                                        <span class="date">
+                                                <i class="far fa-calendar"></i>
+                                                7/25/2020
+                                        </span>
+                                        <span class="author">
+                                                <i class="far fa-user"></i>
+                                                Hastech
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-1/4 px-[12px] mb-[24px]">
+                                <div class=" mb-[24px]">
+                                    <a href="#">
+                                        <img src="./assets/images/articals/4.jpg" alt="" class="w-full">
+                                    </a>
+                                </div>
+                                <div class="articel-contain">
+                                    <h4 class="mb-[16px] text-[15px] font-bold -text--color-primary hover:-text--bs-primary">
+                                        <a href="#">This Is First Post For XipBlog</a>
+                                    </h4>
+                                    <div class="flex items-center justify-between text-[13px] -text--color-opa">
+                                        <span class="date">
+                                                <i class="far fa-calendar"></i>
+                                                7/25/2020
+                                        </span>
+                                        <span class="author">
+                                                <i class="far fa-user"></i>
+                                                Hastech
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- banner-bottom -->
+                <div class="banner-bottom py-[60px] border-y border-y-[#e5e5e5] flex">
+                    <div class="max-w-[1320px] w-full m-auto flex">
+                        <div class="w-1/3 px-[12px] flex">
+                            <div class="banner-icon">
+                                <span class="w-[60px] h-[60px] leading-[60px] -text--bs-white rounded-full -bg--bs-primary text-[28px] text-center inline-block mr-[24px]">
+                                    <i class="fas fa-anchor"></i>
+                                </span>
+                            </div>
+                            <div class="banner-contain">
+                                <h6 class="mb-[8px] text-[19px] font-[300] -text--color-primary">Return & Exchange</h6>
+                                <p class="text-[13px] -text--color-opa">Committed to return the money in 30 days</p>
+                            </div>
+                        </div>
+                        <div class="w-1/3 px-[12px] flex">
+                            <div class="banner-icon">
+                                <span class="w-[60px] h-[60px] leading-[60px] -text--bs-white rounded-full -bg--bs-primary text-[28px] text-center inline-block mr-[24px]">
+                                    <i class="fas fa-gift"></i>
+                                </span>
+                            </div>
+                            <div class="banner-contain">
+                                <h6 class="mb-[8px] text-[19px] font-[300] -text--color-primary">Recieve Gift Card</h6>
+                                <p class="text-[13px] -text--color-opa">Receive gift all over order $50</p>
+                            </div>
+                        </div>
+                        <div class="w-1/3 px-[12px] flex">
+                            <div class="banner-icon">
+                                <span class="w-[60px] h-[60px] leading-[60px] -text--bs-white rounded-full -bg--bs-primary text-[28px] text-center inline-block mr-[24px]">
+                                    <i class="far fa-life-ring"></i>
+                                </span>
+                            </div>
+                            <div class="banner-contain">
+                                <h6 class="mb-[8px] text-[19px] font-[300] -text--color-primary">Online Support 24/7</h6>
+                                <p class="text-[13px] -text--color-opa">24/7 online support is always ready</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- newsletter -->
+        <div class="news-letter py-[60px]  flex">
+            <div class="max-w-[1320px] w-full m-auto flex">
+                <div class="w-7/12 px-[12px]">
+                    <div class="news-letter-form flex relative">
+                        <h3 class="text-[19px] font-bold -text--color-primary leading-[54px] mr-[55px]">Send newsletter</h3>
+                        <input type="text" class="text-[14px] w-input-newletter h-[54px] -bg--bs-white -text--color-opa px-[10px] pl-[10px] pr-[50px] border border-dotted border-[#d9d9d9]" placeholder="Your email address">
+                        <button class="absolute top-[12px] right-[10px] text-center block leading-[32px] w-[32px] h-[32px] text-[18px] -text--bs-white font-bold -bg--bs-primary rounded-full hover:bg-[#333]">
+                            <i class="far fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-5/12 px-[12px]">
+                    <div class="social-form flex justify-between ">
+                        <h3 class="text-[19px] font-bold -text--color-primary leading-[54px] mr-[55px]">Social media</h3>
+                        <ul class="flex">
+                            <li class="ml-[10px] -text--color-opa ">
+                                <a href="#" class="w-[40px] h-[50px] leading-[50px] text-center text-[28px] inline-block -bg--bs-white hover:-text--bs-primary"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="ml-[10px] -text--color-opa ">
+                                <a href="#" class="w-[40px] h-[50px] leading-[50px] text-center text-[28px] inline-block -bg--bs-white hover:-text--bs-primary"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="ml-[10px] -text--color-opa ">
+                                <a href="#" class="w-[40px] h-[50px] leading-[50px] text-center text-[28px] inline-block -bg--bs-white hover:-text--bs-primary"><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li class="ml-[10px] -text--color-opa ">
+                                <a href="#" class="w-[40px] h-[50px] leading-[50px] text-center text-[28px] inline-block -bg--bs-white hover:-text--bs-primary"><i class="fab fa-glide-g"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+
+            <!-- footer-top -->
+            <div class="footer-top py-[60px]  flex bg-[#fafafa]">
+                <div class="max-w-[1320px] w-full m-auto flex">
+                    <div class="w-1/4 px-[12px]">
+                        <h4 class="text-[17px] leading-[24px] font-[300] -text--color-primary mb-[25px]">About Us</h4>
+                        <ul class="address">
+                            <li class="mb-[20px]">
+                                <div class="flex">
+                                    <div>
+                                        <span class="w-[50px] h-[50px] text-center text-[24px] leading-[45px] rounded-full mr-[20px] -text--bs-primary border-[3px] border-[--bs-primary] block">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-[13px] -text--color-opa leading-[24px]">123 Main Street, Anytown,CA 12345 USA.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-[20px]">
+                                <div class="flex">
+                                    <div>
+                                        <span class="w-[50px] h-[50px] text-center text-[24px] leading-[45px] rounded-full mr-[20px] -text--bs-primary border-[3px] border-[--bs-primary] block">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-[13px] -text--color-opa leading-[24px]">((+1)866-540-3229 800) 0123 4567 890</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-[20px]">
+                                <div class="flex">
+                                    <div>
+                                        <span class="w-[50px] h-[50px] text-center text-[24px] leading-[45px] rounded-full mr-[20px] -text--bs-primary border-[3px] border-[--bs-primary] block">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <p class="text-[13px] -text--color-opa leading-[24px]">Email us:</p>
+                                        <a href="#" class="text-[14px] -text--bs-primary">hasthemes.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/4 px-[12px]">
+                        <h4 class="text-[17px] leading-[24px] font-[300] -text--color-primary mb-[25px]">About Us</h4>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                        Prices drop
+                                        <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                        New products
+                                        <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                        Best sales <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                        Login <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    My account <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/4 px-[12px]">
+                        <h4 class="text-[17px] leading-[24px] font-[300] -text--color-primary mb-[25px]">Products</h4>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    delivery
+                                        <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    Legal notice
+                                        <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    about us <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    secure payment method <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="text-[13px] leading-[40px] -text--color-secondary border-b border-b-[#e1e1e1] flex items-center justify-between hover:-text--bs-primary">
+                                    Sitemap <span class="-text--color-opa"><i class="fas fa-caret-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/4 px-[12px]">
+                        <h4 class="text-[17px] leading-[24px] font-[300] -text--color-primary mb-[25px]">Product Tags</h4>
+                        <ul class="flex flex-wrap">
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Garden Plants</a></li>
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Riding Mower</a></li>
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Pressure Washer</a></li>
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Garden Tools</a></li>
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Grass Trimmer</a></li>
+                            <li><a href="#" class="text-[13px] -text--color-secondary font-normal inline-block mb-[8px] mr-[8px] p-[6px] border border-[#d5d5d5] hover:-border--bs-primary hover:-text--bs-primary">Flowers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer-bottom -->
+            <div class="footer-bottom py-[30px] bg-[#959595]">
+                <div class="max-w-[1320px] w-full m-auto flex">
+                    <div class="w-1/2 px-[12px]">
+                        <a  href="#"><img class="max-w-full" src="./assets/images/payment.png" alt=""></a>
+                    </div>
+                    <div class="w-1/2 px-[12px]">
+                        <p class="text-[14px] leading-[24px] -text--bs-white font-[300] text-right">© Copyright <a href="#" class="hover:-text--color-primary">Hasthemes</a>. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- scroll up -->
+        <button class="w-[40px] h-[40px] leading-[40px] text-center bg-[#333] -text--bs-white fixed bottom-[25px] right-[25px] rounded-full hover:-bg--bs-primary">
+            <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </button>
+    </div>
+
+    
+</body>
+
+</html>
